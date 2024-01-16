@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        form{
+            padding: 0;
+            margin: 0;
+        }
+        .login-container{
+           
+         
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          
+        }
+
+        .login-form input{
+            padding: 20px 25px;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 40%;
+            transition: .2s;
+        }
+
+        .login-form button{
+            width: 45%;
+            margin-top: 20px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 0px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-form{
+            padding: 80px;
+         
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            
+        }
+
+        input:focus{
+            border: none !important;
+            outline: none !important;
+            transform: scale(1.01);
+
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <form class="login-form" action="/register" method="post">
+        <h1>Register</h1>
+        <input type="name" name="name" id="" required placeholder="Name"> <br>
+        <input type="email" name="email" id="" required placeholder="Email"> <br>
+        <input type="password" name="password" required id="" placeholder="Password"> <br>
+        <button type="submit">Login</button> 
+        <p>Already A User? <a href="/login">Login</a></p>
+    </form>
+</div>
+</body>
+</html>
